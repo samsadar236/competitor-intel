@@ -1,0 +1,73 @@
+import type { Config } from "tailwindcss";
+
+// Colors, spacing and type scale ported verbatim from the Google Stitch design.
+const config: Config = {
+  darkMode: "class",
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#000000",
+        "primary-container": "#141b2b",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#7d8497",
+        secondary: "#0058be",
+        "secondary-container": "#2170e4",
+        "secondary-fixed": "#d8e2ff",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#fefcff",
+        "on-secondary-fixed": "#001a42",
+        tertiary: "#000000",
+        "tertiary-container": "#23005c",
+        "tertiary-fixed": "#e9ddff",
+        "on-tertiary-container": "#9466ff",
+        "on-tertiary-fixed": "#23005c",
+        error: "#ba1a1a",
+        "error-container": "#ffdad6",
+        "on-error": "#ffffff",
+        "on-error-container": "#93000a",
+        background: "#fcf8fa",
+        "on-background": "#1b1b1d",
+        surface: "#fcf8fa",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f6f3f4",
+        "surface-container": "#f0edee",
+        "surface-container-high": "#eae7e9",
+        "surface-container-highest": "#e5e2e3",
+        "surface-variant": "#e5e2e3",
+        "on-surface": "#1b1b1d",
+        "on-surface-variant": "#45464c",
+        outline: "#76777d",
+        "outline-variant": "#c6c6cd",
+      },
+      borderRadius: {
+        DEFAULT: "0.75rem",
+        lg: "1rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "20px": "20px",
+        full: "9999px",
+      },
+      spacing: {
+        xs: "4px", sm: "8px", md: "16px", lg: "24px", xl: "32px",
+        "2xl": "48px", "3xl": "64px", gutter: "24px", "margin-desktop": "40px",
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+      },
+      fontSize: {
+        "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }],
+        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }],
+        "body-sm": ["14px", { lineHeight: "20px" }],
+        "body-md": ["16px", { lineHeight: "24px" }],
+        "body-lg": ["18px", { lineHeight: "28px" }],
+        "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }],
+        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
