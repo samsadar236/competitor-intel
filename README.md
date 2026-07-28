@@ -147,7 +147,7 @@ Open http://localhost:3000.
 
 Add PNGs to `docs/screenshots/` and they'll render here:
 
-!(docs/screenshots/1.png)
+![1](docs/screenshots/1.png)
 ![Report](docs/screenshots/report.png)
 
 ---
