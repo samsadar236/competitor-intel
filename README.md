@@ -12,6 +12,10 @@ comparison and strategic recommendations.
 
 ---
 
+## Live
+https://competitor-intel-ebon-five.vercel.app
+
+---
 ## Architecture
 
 ```mermaid
@@ -148,7 +152,9 @@ Open http://localhost:3000.
 Add PNGs to `docs/screenshots/` and they'll render here:
 
 ![1](docs/screenshots/1.png)
-![Report](docs/screenshots/report.png)
+![2](docs/screenshots/2.png)
+![3](docs/screenshots/3.png)
+![4](docs/screenshots/4.png)
 
 ---
 
