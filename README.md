@@ -46,21 +46,8 @@ flowchart LR
     WEB["Competitor websites<br/>(public pages)"] -.-> F
 ```
 
-Text version of the same flow:
 
-```
-User → [Next.js: New Analysis] → POST /api/analyze → [FastAPI]
-                                                        │
-                                                        ▼
-                                   ┌──────── Python engine ────────┐
-   competitor sites ┄┄┄▶ fetch.py ─▶ llm.py (extract) ─▶ llm.py (synthesize)
-        (public)          (text)        │  ▲                    │
-   free LLM API ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘  └── schema.py (contract)┘
-                                                        │
-                                          structured JSON (AnalyzeResponse)
-                                                        ▼
-                                   [Next.js: Report page] → export MD / JSON / PDF
-```
+---
 
 ### How the engine works
 
