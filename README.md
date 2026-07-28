@@ -1,4 +1,4 @@
-# InsightEngine AI — Competitor Intelligence
+# InsightEngine AI — Competitor Research Agent
 
 A full-stack AI competitor-research app. Give it a business and a few competitor
 websites; it reads their **public pages**, analyzes each one against a fixed set
@@ -114,25 +114,8 @@ Open http://localhost:3000.
 
 ---
 
-## Deploy (free tiers)
 
-**Backend → Render (or Railway):**
-1. Push this repo to GitHub.
-2. New Web Service → point at `backend/`.
-3. Build: `pip install -r requirements.txt` · Start: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-4. Add env vars from `.env.example` (your `LLM_API_KEY`, etc.). Copy the service URL.
 
-**Frontend → Vercel:**
-1. New Project → point at `frontend/`.
-2. Env: `NEXT_PUBLIC_API_BASE_URL` = your Render URL, `NEXT_PUBLIC_USE_MOCK=false`.
-3. Deploy.
-4. In the backend, restrict CORS `allow_origins` to your Vercel domain.
-
-> Free Python hosts sleep when idle, so the first request after a pause is slow.
-> The analysis is a single blocking call (~1–2 min); streaming per-stage progress
-> is a planned enhancement.
-
----
 
 ## Screenshots
 
