@@ -117,7 +117,7 @@ Open http://localhost:3000.
 
 
 
-## Screenshots
+## Screenshots of Deployed Web Application
 
 Add PNGs to `docs/screenshots/` and they'll render here:
 
